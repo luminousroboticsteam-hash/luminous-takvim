@@ -189,7 +189,7 @@ async function init() {
 
     monthsEl.innerHTML = data.months.map(renderMonth).join('');
 
-    if (data.repo && data.repo.indexOf('/') > -1 && !data.repo.startsWith('KULLANICIADI')) {
+    if (data.repo && data.repo.indexOf('/') > -1 && !data.repo.startsWith('luminousroboticsteam')) {
       addBtn.href = `https://github.com/${data.repo}/edit/main/events.json`;
     } else {
       addBtn.href = '#';
